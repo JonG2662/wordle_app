@@ -1,9 +1,9 @@
 const Key = (props) => {
 return(
         <div className="keyboardButton"
-                onClick={() => {
-                alert(props.text)
-        }}>
+            onClick={() => {
+                props.onPressedKey(props.text)
+             }}>
             {props.text}
         </div>
     )
